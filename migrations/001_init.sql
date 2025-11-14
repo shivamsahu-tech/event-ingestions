@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS events (
+  id BIGSERIAL PRIMARY KEY,
+  site_id TEXT NOT NULL,
+  event_type TEXT NOT NULL,
+  path TEXT NOT NULL,
+  user_id TEXT,
+  timestamp TIMESTAMPTZ NOT NULL
+);
