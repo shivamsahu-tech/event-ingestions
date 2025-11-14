@@ -59,7 +59,7 @@ The system consists of three main components:
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/shivamsahu-tech/event-ingestions.git
 cd event-ingestion
 ```
 
@@ -75,19 +75,11 @@ docker-compose up -d
 
 4. Start the services:
 
-   **Option 1: Using script**
 ```bash
-   ./scripts/start.sh
+./scripts/start.sh
 ```
 
-   **Option 2: Run manually**
-```bash
-   # Start API
-   go run ./cmd/api/main.go
 
-   # Start Worker (in another terminal)
-   go run ./cmd/worker/main.go
-```
 
 5. Verify services:
    - Ingestion API: `http://localhost:8080/event`
